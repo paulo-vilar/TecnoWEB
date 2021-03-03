@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <script type="text/javascript" src="JS/scripts.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2BP2xZ2FUnqGOvE4krrI07CLKYg1dhL4&callback=initMap" async defer></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html" id="home">FireWorks</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="orcamentos.html">Orçamentos</a>
+            <a href="about.html">Quem Somos</a>
+            <a href="login.html" id="login">Login</a>
+        </nav>
+    </header><br>
+    <div id="contentor">
+    <main class="about">
+        <h1><span>Quem Somos?</span></h1>
+        <hr><br><br>
+        <h2>História</h2><br>
+        <p>Criada em 1995 por dois estudantes universitários, Fireworks tem como principal objetivo criar os melhores eventos possiveis. Em 2000, com a passagem para um novo milénio, Fireworks recebeu alguma atenção graças à festa do novo milénio em Portugal. Atualmente Fireworks conta com mais de 450 000 clientes e 1 234 funcionários.</p><br>
+        <h2>Conheça a nossa equipa</h2><br>
+        <div class="fila">
+            <div class="coluna">
+                <div class="cartao">
+                    <img src="imgs/avatar_temporario.png" style="width:100%" alt="avatar">
+                    <div class="contentor">
+                        <h2>Paulo Vilar</h2>
+                        <p class="titulo">CEO & Fundador</p><br>
+                        <p>Mestrado em Engenharia Informática.</p><br>
+                        <p class="fundo">Contacto: fundador@exemplo.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="coluna">
+                <div class="cartao">
+                    <img src="imgs/avatar_temporario.png" style="width:100%" alt="avatar">
+                    <div class="contentor">
+                        <h2>Raul Silva</h2>
+                        <p class="titulo">Co-Fundador</p><br>
+                        <p>Licenciatura em Engenharia Informática.</p><br>
+                        <p class="fundo">Contacto: cofundador@exemplo.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 id="contact">Contactos</h2>
+        <br>
+        <p><b>Número de Telefone:</b> (+351) 999 999 999<br><b>Fax:</b> (+351) 999 999 999<br><b>Email:</b> fireworks@example.com<br><b>Morada:</b> Rua Barbosa du Bocage 5<br>&emsp;&emsp;&emsp;&emsp;2710-567 Sintra, Portugal</p><br>
+        <h2>Localização</h2><br>
+        <div id="mapa"></div>
+        <br><br>
+        <h2>Gostaria de pertencer à nossa equipa?</h2><br>
+        <div class="equipa">
+            <form class="formulario" method="post" action="mailto:fireworks@exemplo.com">
+                <fieldset>
+                    <legend>Preencha o seguinte formulário:</legend><br>
+                    <label>Nome:</label>
+                    <input type="text" name="nome" placeholder="Primeiro e Último" required><br><br>
+                    <label>Idade:</label>
+                    <input type="text" name="idade" placeholder="18-99" min="18" max="99" required><br><br>
+                    <label>Nacionalidade:</label>
+                    <input type="text" name="nacionalidade" placeholder="ex: português" required><br><br>
+                    <label>Contacto telefónico:</label>
+                    <input type="tel" name="telemovel" placeholder="9XX XXX XXX" maxlength="16" pattern="[9]{1}[0-9]{2}\s?[0-9]{3}\s?[0-9]{3}" required><br><br>
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="eu@exemplo.com" required><br><br>
+                    <label>Fale-nos um pouco sobre si:</label>
+                    <textarea placeholder="Escreva aqui..." class="c1" rows="5" cols="35" required></textarea><br><br>
+                </fieldset>
+                <div id="submeter">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+    </div>
+    <footer>
+        <div id="direitos">
+            <p>&copy 2017 - FireWorks</p>
+        </div>
+        <div id="supp">
+            <a href="about.html#contact" class="about">Contactos</a>
+            <a target="_blank" href="https://www.facebook.com" class="face">FB</a>
+            <a target="_blank" href="https://www.twitter.com" class="twit">TW</a>
+            <a target="_blank" href="https://www.instagram.com" class="inst">IG</a>
+        </div>
+    </footer>
+</body>
+</html>

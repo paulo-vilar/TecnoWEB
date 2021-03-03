@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamentos</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html" id="home">FireWorks</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="orcamentos.html">Orçamentos</a>
+            <a href="about.html">Quem Somos</a>
+            <a href="login.html" id="login">Login</a>
+        </nav>
+    </header><br>
+    <div id="contentor">
+    <main class="orcamentos">
+        <h1>Orçamentos</h1>
+        <hr><br><br>
+        <br>
+        <p>Se deseja organizar um evento e está à procura de um orçamento:</p><br>
+        <form method="post" action="mailto:fireworks@example.com">
+            <fieldset>
+                <legend>Dados Pessoais:</legend><br>
+                <label>Nome:</label>
+                <input type="text" placeholder="Primeiro e Ultimo" autofocus required>
+                <br><br>
+                <label>Sexo:</label>
+                <select name="Sexo">
+                    <option value="sexo">Masculino</option>
+                    <option value="sexo">Feminino</option>
+                    <option value="sexo">Outro</option>
+                </select>
+                <br><br>
+                <label>Cartão de Cidadão:</label>
+                <input type="text" name="id" placeholder="99999999 9 ZZ9" pattern="[0-9]{8}\s?[0-9]\s?[A-Za-z]{2}[0-9]" required>
+                <br><br>
+                <label>Idade:</label>
+                <input type="number" name="idade" min="18" max="99" placeholder="18-99" required>
+                <br><br>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="me@example.com" required>
+                <br><br>
+                <label for="distrito">Distrito:</label>
+                <input list="distrito" name="distrito" placeholder="Selecione a opção" required/>
+                <datalist id="distrito">
+					<option value="Aveiro"></option>
+                    <option value="Beja"></option>
+                    <option value="Braga"></option>
+                    <option value="Bragança"></option>
+                    <option value="Castelo Branco"></option>
+                    <option value="Coimbra"></option>
+                    <option value="Évora"></option>
+                    <option value="Faro"></option>
+                    <option value="Guarda"></option>
+                    <option value="Leiria"></option>
+                    <option value="Lisboa"></option>
+                    <option value="Portalegre"></option>
+                    <option value="Porto"></option>
+                    <option value="Santarém"></option>
+                    <option value="Setúbal"></option>
+                    <option value="Viana do Castelo"></option>
+                    <option value="Vila Real"></option>
+                    <option value="Viseu"></option>
+                    <option value="Madeira"></option>
+                    <option value="Açores"></option>
+                </datalist>
+                <br><br>
+                <label>Cidade:</label>
+                <input type="text" name="cidade" placeholder="Introduza a cidade" required>
+                <br><br>
+                <label>Localidade:</label>
+                <input type="text" name="cidade" placeholder="Introduza a localidade" required>
+                <br><br>
+                <label>Código Postal:</label>
+                <input type="text" name="cp" placeholder="9999-999" pattern="[0-9]{4}[\-]?[0-9]{3}" required>
+                <br><br>
+                <label>Morada:</label>
+                <input type="text" name="morada" placeholder="Rua/Apartamento" required>
+                <br><br>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Evento:</legend><br>
+                <label>Descrição:</label>
+                <textarea placeholder="Descreva o evento..." class="c1" rows="5" cols="20"></textarea>
+                <br><br>
+                <label>Local:</label>
+                <input type="text" name="local" placeholder="Apenas em Portugal" required>
+                <br><br>
+                <label>Nº Pessoas:</label>
+                <input type="text" name="pessoas" placeholder="Ilimitado" required>
+                <br><br>
+                <label>Data:</label>
+                <input type="date" name="data" min="2019-01-01" max="2099-12-31" required>
+                <br><br>
+                <label>Duração:</label>
+                <input type="text" name="duracao" placeholder="Em Horas" required>
+                <br><br>
+            </fieldset>
+            <div id="submeter">
+                <input type="submit" value="Submeter">
+            </div>
+        </form>
+    </main>
+    </div>
+    <footer>
+        <div id="direitos">
+            <p>&copy 2017 - FireWorks</p>
+        </div>
+        <div id="supp">
+            <a href="about.html#contact" class="about">Contactos</a>
+            <a target="_blank" href="https://www.facebook.com" class="face">FB</a>
+            <a target="_blank" href="https://www.twitter.com" class="twit">TW</a>
+            <a target="_blank" href="https://www.instagram.com" class="inst">IG</a>
+        </div>
+    </footer>
+</body>
+</html>

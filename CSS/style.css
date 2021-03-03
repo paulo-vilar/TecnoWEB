@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #1A1A1D;
+  font-family: Helvetica, sans-serif; }
+
+main {
+  max-width: 1700px;
+  margin: auto; }
+
+header {
+  border-bottom: solid 1px;
+  border-bottom-color: white;
+  overflow: hidden;
+  padding: 20px 10px;
+  font-family: Georgia, serif; }
+  header a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px; }
+    @media screen and (max-width: 720px) {
+      header a {
+        float: none;
+        display: block;
+        text-align: left; } }
+  header #home {
+    font-size: 25px;
+    font-weight: bold;
+    color: #6F2232;
+    font-family: Georgia, serif; }
+  header a:hover {
+    color: #C3073F; }
+  header #login {
+    float: right;
+    color: #950740; }
+    @media screen and (max-width: 720px) {
+      header #login {
+        float: none; } }
+
+footer {
+  width: 100%;
+  background-color: dimgrey;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 11; }
+  @media screen and (max-width: 720px) {
+    footer {
+      position: static; } }
+  footer #direitos {
+    width: 50%;
+    float: left; }
+    @media screen and (max-width: 720px) {
+      footer #direitos {
+        width: 100%; } }
+    footer #direitos p {
+      padding-left: 10%;
+      color: #FFFFFF;
+      font-size: 0.7em;
+      line-height: 70px;
+      text-transform: capitalize;
+      letter-spacing: 1px; }
+      @media screen and (max-width: 720px) {
+        footer #direitos p {
+          text-align: center;
+          padding: 0; } }
+  footer #supp {
+    width: 50%;
+    float: right; }
+    @media screen and (max-width: 720px) {
+      footer #supp {
+        width: 100%; } }
+    footer #supp a {
+      float: left;
+      line-height: 70px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: bold; }
+    footer #supp .about {
+      background-color: #6DCD9A;
+      font-size: 0.8em;
+      width: 40%; }
+    footer #supp .face {
+      background-color: #3B5999;
+      font-size: 1.2em;
+      width: 20%; }
+    footer #supp .twit {
+      background-color: #55ACEE;
+      font-size: 1.2em;
+      width: 20%; }
+    footer #supp .inst {
+      background-color: #E4405F;
+      font-size: 1.2em;
+      width: 20%; }
+
+@media screen and (max-width: 720px) {
+  .home {
+    margin: 5px; } }
+.home #slideshow {
+  margin: auto;
+  max-width: 1000px;
+  position: relative;
+  height: 500px;
+  box-shadow: 0 0 5px #FFFFFF; }
+  .home #slideshow img {
+    vertical-align: middle;
+    position: absolute;
+    width: 100%;
+    z-index: 8; }
+  .home #slideshow .current {
+    z-index: 10; }
+  .home #slideshow .before {
+    z-index: 9; }
+  @media screen and (max-width: 720px) {
+    .home #slideshow {
+      max-height: 195px; } }
+.home hr {
+  max-width: 850px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 720px) {
+    .home hr {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto; } }
+.home h1 {
+  color: #950740;
+  font-family: Georgia, serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 0 0 12px;
+  text-align: center; }
+.home #bemvindo {
+  padding-bottom: 121px;
+  text-align: center; }
+  .home #bemvindo h2 {
+    color: #6F2232; }
+  .home #bemvindo p {
+    color: #FFFFFF; }
+
+.servicos p {
+  font-size: 1.2em;
+  color: #FFFFFF; }
+.servicos h2 {
+  color: #950740; }
+.servicos h1 {
+  color: #6F2232;
+  text-align: center; }
+.servicos img {
+  width: 100%; }
+.servicos hr {
+  max-width: 120px;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto; }
+.servicos #nota {
+  padding-bottom: 121px; }
+.servicos .fila {
+  content: "";
+  clear: both;
+  display: table; }
+  .servicos .fila .coluna_eventos {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-width: 1px;
+    margin-top: 2px;
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 15px; }
+    .servicos .fila .coluna_eventos .legenda {
+      margin-top: 2px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-size: 15px; }
+    @media screen and (max-width: 720px) {
+      .servicos .fila .coluna_eventos {
+        width: 100%; } }
+
+.clientes h1 {
+  color: #6F2232;
+  text-align: center; }
+.clientes h2 {
+  color: #950740;
+  margin-top: 15px;
+  text-align: center; }
+.clientes h3 {
+  color: #C3073F; }
+.clientes p {
+  color: #FFFFFF; }
+.clientes hr {
+  max-width: 250px;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.orcamentos {
+  max-width: 600px; }
+  .orcamentos h1 {
+    color: #6F2232;
+    text-align: center; }
+  .orcamentos p {
+    color: #FFFFFF; }
+  .orcamentos label {
+    color: #FFFFFF; }
+  .orcamentos legend {
+    color: #C3073F; }
+  .orcamentos .c1 {
+    vertical-align: top; }
+  .orcamentos hr {
+    max-width: 170px;
+    width: 100%;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto; }
+  .orcamentos #submeter {
+    padding-bottom: 121px; }
+
+.about .equipa {
+  max-width: 600px;
+  margin-left: 100px; }
+  .about .equipa p {
+    color: #FFFFFF; }
+  .about .equipa label {
+    color: #FFFFFF; }
+  .about .equipa legend {
+    color: #C3073F; }
+  .about .equipa .c1 {
+    vertical-align: top; }
+  @media screen and (max-width: 720px) {
+    .about .equipa {
+      max-width: 600px;
+      margin-left: 2px; } }
+.about .fila::after {
+  content: "";
+  clear: both;
+  display: table; }
+.about .fila .coluna {
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  max-width: 230px; }
+  .about .fila .coluna .cartao {
+    border-style: solid;
+    border-color: white;
+    border-width: 1px; }
+    .about .fila .coluna .cartao .contentor {
+      padding: 0 16px; }
+      .about .fila .coluna .cartao .contentor .titulo {
+        color: grey; }
+      .about .fila .coluna .cartao .contentor .fundo {
+        padding: 8px;
+        color: #FFFFFF;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        font-size: 14px; }
+      .about .fila .coluna .cartao .contentor::after {
+        content: "";
+        clear: both;
+        display: table; }
+.about h1 {
+  color: #6F2232;
+  text-align: center; }
+.about h2 {
+  color: #950740; }
+.about p {
+  color: #FFFFFF; }
+.about #mapa {
+  height: 400px;
+  width: 750px;
+  background-color: grey; }
+  @media screen and (max-width: 720px) {
+    .about #mapa {
+      width: 100%; } }
+.about hr {
+  max-width: 200px;
+  width: 100%;
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto; }
+.about #submeter {
+  padding-bottom: 121px; }
+
+/*# sourceMappingURL=style.css.map */

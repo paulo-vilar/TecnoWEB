@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="CSS/style-login.css">
+    <script src="JS/jquery3.3.1.js"></script>
+    <script type="text/javascript" src="JS/scripts.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="home.html" id="home">FireWorks</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="clientes.html">Clientes</a>
+            <a href="orcamentos.html">Orçamentos</a>
+            <a href="about.html">Quem Somos</a>
+            <a href="login.html" id="login">Login</a>
+        </nav>
+    </header>
+    <main class="login">
+        <div class="form">
+            <form name="register-form" class="register-form" onsubmit="return registovalido()" method="post">
+                <h1>Criar uma conta</h1><hr><br>
+                <input type="text" name="utilizador" placeholder="Nome de utilizador"/>
+                <input type="password" name="password" placeholder="Palavra-passe"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <button>Criar</button>
+                <p class="message">Já tem uma conta? <a href="#">Entrar</a></p>
+            </form>
+            <form class="login-form">
+                <h1>Entrar na conta</h1><hr><br>
+                <input type="text" placeholder="Nome de utilizador" class="user" />
+                <input type="password" placeholder="Palavra-passe" class="pass" />
+                <button onclick="check(this.form)" id="login-button">Entrar</button>
+                <p class="message">Ainda não tem uma conta? <a href="#">Criar</a></p>
+            </form>
+        </div>
+    <script>
+        $(".message a").on('click',function(){
+        $("form").slideToggle();
+        });
+    </script>
+	</main>
+	<footer>
+        <div id="direitos">
+            <p>&copy 2017 - FireWorks</p>
+        </div>
+        <div id="supp">
+            <a href="about.html#contact" class="about">Contactos</a>
+            <a target="_blank" href="https://www.facebook.com" class="face">FB</a>
+            <a target="_blank" href="https://www.twitter.com" class="twit">TW</a>
+            <a target="_blank" href="https://www.instagram.com" class="inst">IG</a>
+        </div>
+    </footer>
+</body>
+</html>
